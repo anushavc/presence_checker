@@ -1,0 +1,13 @@
+{
+    "manifest_version":2,
+    "name":"presence checker",
+    "description":"helps teachers ensure that the students are paying attention during the entire duration of the class",
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApjVfOGI2ZZ0cngo7Cjjn/ArNWMTdpZbcutN6EkCaz80qvlgOq+jlHUoyWJTSQ9PutZ8P4Punm4HJvsbofij+epoU/IOywGOAVSfzmiZMeMn9+EIGRkqAoR94qGJJRbx6MFe1ayHqyZb70mrirOQJGXzCsRSLQ8jS8dQhIGR1tuuvMOc0tAg0Kv0HBw427eoA8k+o/DtnwYFYXSp+n9+nAeFlwDhEy4NibR77WY5nV62RCLg8T/OUx1tPseFdus2WeEZm8XcO6s7dvrS2P6KsCNSMuJqDhWNGu1AfWdYnROO65NjK7eY8HmH2QNQy4+xp2KmOZLJ39+qj3vDND+rVZwIDAQAB",
+    "version":"0.1.0",
+    "background":{
+        "scripts":["./background.js","./jsrsasign-all-min.js"]
+    },
+    "options_page":"./options.html",
+    "browser_action":{"default_icon":"logo.png", "default_popup":"popup.html"},
+    "permissions":["identity"]
+}
